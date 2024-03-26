@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../images/logo1.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food website | Food Menu</title>
+</head>
+
+<body>
+    <!--Header for laptop (start)-->
+    <header>
+        <div class="header">
+
+            <!--Sign up/Sign in Form-->
+            <div class="sign">
+                <div class="sign-box">
+                    <div class="bar">
+                        <i class="fa-solid fa-xmark" id="x-sign-mb"></i>
+                    </div>
+                    <!-- sign up form  -->
+                    <div class="signup">
+                        <h3>Sign Up</h3>
+                        <form action="#">
+                            <label for="fullname">Enter Full Name</label></br>
+                            <input type="text" placeholder="Full Name" name="fullname" id=""></br>
+                            <label for="email">Enter E-mail</label></br>
+                            <input type="email" placeholder="E-mail" name="email" id=""></br>
+                            <label for="password">Create Password</label></br>
+                            <input type="password" placeholder="Password" name="password" id=""></br>
+                            <label for="copassword">Confirm Password</label></br>
+                            <input type="password" placeholder="Confirm Password" name="copassword" id=""></br>
+                            <input type="submit" value="Sign Up">
+                            <p id="to-signin">Already have an account? Sign In</p>
+                        </form>
+                    </div>
+                    <!-- sign in form  -->
+                    <div class="signin">
+                        <h3>Sign In</h3>
+                        <form action="#">
+                            <label for="email2">Enter Your E-mail:</label>
+                            <input type="email" placeholder="E-mail" name="email2" id="">
+                            <label for="password2">Enter Password: </label>
+                            <input type="password" placeholder="Password" name="password2" id="">
+                            <input type="submit" value="Sign In">
+                        </form>
+                        <p>Forgot Password?</p>
+                        <p id="to-signup">Don't have an account? Sign Up</p>
+                    </div>
+                </div>
+            </div>
+            <!--Hidden Header for Mobile/Tablet (start)-->
+            <div class="headerbar">
+                <div class="account">
+                    <ul>
+                        <a href="./index.html">
+                            <li><i class="fa-solid fa-house-chimney"></i></li>
+                        </a>
+                        <a href="#">
+                            <li><i class="fa-solid fa-magnifying-glass searchicon" id="searchicon1"></i></li>
+                        </a>
+                        <div class="search" id="searchinput1">
+                            <input type="search" name="" id="">
+                            <i class="fa-solid fa-magnifying-glass srchicon"></i>
+                        </div>
+                        <a href="#">
+                            <li><i class="fa-solid fa-user" id="user-mb"></i></li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <a href="./index.html">
+                            <li>Home</li>
+                        </a>
+                        <a href="./About.html">
+                            <li>About</li>
+                        </a>
+                        <a href="./menu.html">
+                            <li>Food Menu</li>
+                        </a>
+                        <a href="./book.html">
+                            <li>Book table</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <!--Hidden Header for Mobile/Tablet (end)-->
+            <div class="logo">
+                <img src="./images/namastelogo.png" alt="logo"> 
+            </div>
+            <!--Bar/cross in header for mobile/tablet (start)-->
+            <div class="bar">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-xmark" id="hdcross"></i>
+            </div>
+            <!--Bar/cross in header for mobile/tablet (end)-->
+            <div class="nav">
+                <ul>
+                    <a href="./index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="./About.html">
+                        <li>About</li>
+                    </a>
+                    <a href="./menu.html">
+                        <li>Food Menu</li>
+                    </a>
+                    <a href="./book.html">
+                        <li>Book table</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="account">
+                <ul>
+                    <a href="./index.html">
+                        <li><i class="fa-solid fa-house-chimney"></i></li>
+                    </a>
+                    <a href="#">
+                        <li><i class="fa-solid fa-magnifying-glass searchicon" id="searchicon2"></i></li>
+                    </a>
+                    <div class="search" id="searchinput2">
+                        <input type="search" name="" id="">
+                        <i class="fa-solid fa-magnifying-glass srchicon"></i>
+                    </div>
+                    <a href="#">
+                        <li><i class="fa-solid fa-user" id="user-lap"></i></li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!--Header for laptop (end)-->
+
+    <div class="menu">
+        <div class="menu1">
+            <div>
+                <h1>Food Menu</h1>
+            </div>
+            <div class="fav-head">
+                <!-- Add your all food items  -->
+                <div class="fav-food">
+                    <div class="item">
+                        <div>
+                            <img src="../images/food1.jpg" alt="Food item">
+                        </div>
+                        <h3>Protien Rich Salad</h3>
+                        <p>A tantalizing blend of fresh, crisp greens, vibrant vegetables, and hearty protein sources meticulously crafted to fuel your day.</p>
+                        <p class="fav-price">Starting at ₹259</p>
+                    </div>
+                    <div class="item">
+                        <div>
+                            <img src="../images/food2.jpg" alt="Food item">
+                        </div>
+                        <h3>Noodles</h3>
+                        <p>Savor the aromatic bliss of our perfectly seasoned noodles, a culinary journey in every bite at Namaste Foodie. </p>
+                        <p class="fav-price">Starting at ₹140</p>
+                    </div>
+                    <div class="item">
+                        <div>
+                            <img src="../images/food3.jpg" alt="Food item">
+                        </div>
+                        <h3>Momos</h3>
+                        <p>Indulge in the exquisite flavors of our handcrafted momos, each bite bursting with savory fillings and delicate, steamed perfection at Namaste Foodie </p>
+                        <p class="fav-price">Starting at ₹120</p>
+                    </div>
+                    <div class="item">
+                        <div>
+                            <img src="../images/food4.jpg" alt="Food item">
+                        </div>
+                        <h3>Biryani</h3>
+                        <p>Experience the aromatic allure of our authentic biryani, where fragrant basmati rice meets tender meats or vegetables</p>
+                        <p class="fav-price">Starting at ₹450</p>
+                    </div>
+                    <div class="item">
+                        <div>
+                            <img src="../images/food3.jpg" alt="Food item">
+                        </div>
+                        <h3>Momos</h3>
+                        <p>Indulge in the exquisite flavors of our handcrafted momos, each bite bursting with savory fillings and delicate, steamed perfection at Namaste Foodie </p>
+                        <p class="fav-price">Starting at ₹120</p>
+                    </div>
+                    <div class="item">
+                        <div>
+                            <img src="https://th.bing.com/th?id=OIP.lh10FIrVq2icddhMGdyIlwHaF1&w=281&h=221&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Food item">
+                        </div>
+                        <h3>Burger</h3>
+                        <p>Savor the indulgent delight of our flavorful burger, where juicy patties, fresh vegetables, and zesty sauces.</p>
+                        <p class="fav-price">Starting at ₹145</p>
+                    </div>
+                    <div class="item">
+                        <div>
+                            <img src="https://th.bing.com/th?id=OIP.xjX6cJP1TyGh9CKjD8eHxQHaDg&w=350&h=165&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Food item">
+                        </div>
+                        <h3>Pizza</h3>
+                        <p>Relish the cheesy goodness and irresistible toppings of our wood-fired pizza, crafted to perfection for an unforgettable taste</p>
+                        <p class="fav-price">Starting at ₹229</p>
+                    </div>
+                    <div class="item">
+                        <div>
+                            <img src="https://th.bing.com/th?id=OIP.1k9jrUXyTHES8k_9IbrdHwHaEc&w=322&h=193&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Food item">
+                        </div>
+                        <h3>Chole Bhature</h3>
+                        <p>The quintessential flavors of India with our harmonious blend of spicy chickpeas and fluffy fried bread that's sure to delight your palate </p>
+                        <p class="fav-price">Starting at ₹180</p>
+                    </div>
+                    <div class="item">
+                        <div>
+                            <img src="https://th.bing.com/th?id=OIP.4qsoAKw23X0q4ZljmndpugHaIP&w=236&h=263&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Food item">
+                        </div>
+                        <h3>Dosa</h3>
+                        <p>
+                            Delight in the crispy perfection of our South Indian dosa, expertly crafted and filled with savory goodness, a culinary journey you won't want to miss</p>
+                        <p class="fav-price">Starting at ₹220</p>
+                    </div>
+                    <div class="item">
+                        <div>
+                            <img src="https://th.bing.com/th?id=OIP.Ki5YdGe8TCe_oLWHxVenhgHaD6&w=343&h=181&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Food item">
+                        </div>
+                        <h3>Rolls</h3>
+                        <p>
+                            Savor the delectable fusion of flavors wrapped in our tantalizing rolls, a handheld delight bursting with savory fillings and spices.</p>
+                        <p class="fav-price">Starting at ₹130</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div class="footer">
+        <div class="footer-1">
+            <div class="logo">
+                <img src="./images/namastelogo.png" alt="logo">
+            </div>
+            <div>
+                <address>
+                    <p>Email: namastefoodie_17@gmail.com</p>
+                    <p>NAMASTE FOODIE,</br>Street no. 17, Gurugram, Haryana</br> India 122505.</p>
+                </address>
+            </div>
+        </div>
+        <div class="footer-2">
+            <img src="../images/logo1.jpg" alt="">
+            <h2>Team - <em>Prashant, Divyansh and Preetam</em></h2>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
